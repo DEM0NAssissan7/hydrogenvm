@@ -21,10 +21,11 @@
 4. **and**: reg[0] = reg[0] & reg[1]
 5. **sl**:  reg[0] = reg[0] << reg[1]
 6. **sr**:  reg[0] = reg[0] >> reg[1]
-7. **lt**: reg[0] = (reg[0] < reg[1])?1:0
-8. **jmp**: pc = reg[0]
+7. **lt**: reg[0] = (reg[0] < reg[1])
+8. **jmp**: pc = reg[1]
 9. **cjp**: if(reg[0]) pc = reg[1]
 10. **set**: reg[x] = y
 11. **mv**: reg[y] = reg[x]
 12. **ld**: reg[x] = mem[y]
 13. **str**: mem[x] = reg[0]
+14. **hlt**: HALT

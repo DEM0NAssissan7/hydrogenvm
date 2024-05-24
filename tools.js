@@ -2,7 +2,8 @@ function binary(integer) {
     
 }
 class Tools {
-    static binary(number, bits) {
+    static binary(num, bits) {
+        let number = num ?? 0
         if(!bits)
             return (number).toString(2);
         else {
@@ -37,7 +38,6 @@ class Tools {
             let part = parts[i];
             retval += this.binary(part, 8);
         }
-        console.log(retval)
         return this.decimal(retval);
     }
 }
