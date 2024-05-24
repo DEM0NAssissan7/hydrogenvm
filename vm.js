@@ -42,10 +42,12 @@ function runInstruction(opcode, x, y) {
             // jmp
             pc = reg[1]
             return true;
-            break;
         case 9:
             // cjp: Conditional jump
-            if(reg[0]) pc = reg[1]
+            if(reg[0]){
+                pc = reg[1]
+                return true;
+            }
             break;
         case 10:
             // set

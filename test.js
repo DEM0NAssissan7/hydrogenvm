@@ -1,10 +1,10 @@
 machinecode(`set 1 1
 add # Increment
 mv 0 2 # Store for future use
-mv 0 1
-set 0 9
+mv 0 1 # 9 < [x]
+set 0 9 # [9] < x
 lt # If less than
-set 1 10 # Prepare jump
+set 1 11 # Prepare jump
 cjp # Jump if more than 10
 set 1 0
 mv 2 0
